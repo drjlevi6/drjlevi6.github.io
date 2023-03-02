@@ -1,0 +1,45 @@
+$box-padding: 10px;
+$box-border-radius: 5px;
+$box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+$box-color-light: #fff;
+$box-color-dark: #000;
+$box-background-color-primary: #112055;
+$box-background-color-secondary: #4f9d92;
+
+%box-parent {
+  padding: $box-padding;
+  border-radius: $box-border-radius;
+  box-shadow: $box-shadow;
+}
+
+.box__wrapper {
+  @extend %box-parent;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-family: sans-serif;
+  
+  :hover {
+  	box-shadow: none;
+  }
+}
+
+.box-primary {
+  @extend %box-parent;
+  background-color: $box-background-color-primary;
+  color: $box-color-light;
+}
+
+.box-primary-lighter {
+  @extend %box-parent;
+}
+
+.box-primary-darker {
+  @extend %box-parent;
+}
+
+.box-secondary {
+  @extend %box-parent;
+  background-color: $box-background-color-secondary;
+  color: $box-color-dark;
+}
