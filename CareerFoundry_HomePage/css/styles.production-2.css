@@ -210,7 +210,7 @@ a #navigation-list__item-about{
 	/*width: 600px;	without this the container expands to width of page */
 	overflow: auto;		/* without this, container's height is less than image's */
 	margin: 	20px;
-	/* border: 2px solid darkgreen; */
+	/*border: 2px solid darkgreen;*/
 }
 /* END Styles for about.html, ex. 1.7 ----------*/
 
@@ -389,7 +389,7 @@ main {
 /* about.html (about-changedTitle-2.html)--------------------------------------*/
 .about-main-div-class {
 	margin: 0 auto;
-	border: 2px solid darkblue;
+	/*border: 2px solid darkblue;*/
 	text-align: center;
 }
 
@@ -400,18 +400,18 @@ main {
 
 .about-me-text {
 	margin: auto;
-	border: 2px solid darkblue;
+	/*border: 2px solid darkblue;*/
 }
 
 .about-me-list {
 	align-items: center;
 	margin: auto;
-	border: 2px solid darkblue;
+	/*border: 2px solid darkblue;*/
 }
 
 .about-me-list-item {
 	text-align: center;
-	border: 2px solid darkblue;
+	/*border: 2px solid darkblue;*/
 }
 
 .berlin-illustration {
