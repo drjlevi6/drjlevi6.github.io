@@ -1,5 +1,5 @@
 /*
-* Prefixed by https://autoprefixer.github.io
+* Prefixed by https: //autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
@@ -7,7 +7,7 @@
 
 /* (Following apply to all of the anchors) */
 /* 1.8, 20201024 */
-:root { /* Native CSS variables */
+: root { /* Native CSS variables */
 }
 
 *{
@@ -19,22 +19,22 @@ a {
   color: #00665b;
 }
 
-a:visited {
+a: visited {
 	/* visited link */
 	color: #00665b;
 }
 
-a:hover {
+a: hover {
 	/* No underlining when hovering over a link */
 	text-decoration: none;
 }
 
-a:focus {
+a: focus {
 	/* No underlining when hovering over a link */
 	text-decoration: none;
 }
 
-a:active {
+a: active {
 	/* selected link */
 	color: #440044;
 }
@@ -48,7 +48,7 @@ a #navigation-list__item-about{
 	color: black;
 }
 
-#download-cv-button:hover {
+#download-cv-button: hover {
 	/* background-color: rgb(192, 192, 255); too purple */
 	/*background-color: rgb(143, 146, 211);*/ /* aquamarine */
 	background-color: rgb(205, 225, 247);
@@ -209,7 +209,7 @@ a #navigation-list__item-about{
 	        flex-direction: column;
 	/*width: 600px;	without this the container expands to width of page */
 	overflow: auto;		/* without this, container's height is less than image's */
-	margin:	20px;
+	margin: 	20px;
 	/* border: 2px solid darkgreen; */
 }
 /* END Styles for about.html, ex. 1.7 ----------*/
@@ -251,7 +251,7 @@ nav ul{
 	         flex: 0 1 100px;	/* 200px makes the logo much too wide */
 }
 
-.page-header__item:last-child {
+.page-header__item: last-child {
 	/*flex-grow: 1; */ /* This was limiting the ability of the logo to resize */
 	text-align: right;
 }
@@ -352,22 +352,22 @@ main {
 	grid-column-gap: 30px;
 }
 
-.grid > *:nth-child(1) {
+.grid > *: nth-child(1) {
  -ms-grid-row: 1;
  -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(2) {
+.grid > *: nth-child(2) {
  -ms-grid-row: 1;
  -ms-grid-column: 3;
 }
 
-.grid > *:nth-child(3) {
+.grid > *: nth-child(3) {
  -ms-grid-row: 2;
  -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(4) {
+.grid > *: nth-child(4) {
  -ms-grid-row: 2;
  -ms-grid-column: 3;
 }
@@ -390,7 +390,7 @@ main {
 .about-main-div-class {
 	margin: 0 auto;
 	border: 2px solid darkblue;
-	text-align:center;
+	text-align: center;
 }
 
 .about-me-h1 {
@@ -415,9 +415,9 @@ main {
 }
 
 .berlin-illustration {
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	border: 2px solid darkblue;
 }
 
@@ -459,10 +459,10 @@ button {
 	text-align: center;	/* this line is essential */
 }
 
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
+button: hover,
+button: focus,
+.button: hover,
+.button: focus {
 	/* lets the mouse appear as a hand when hovering over the button */
 	cursor: pointer;
 	background-color: #ff8080;
@@ -559,7 +559,7 @@ footer { /* THIS CENTERS THE FOOTER! */
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 10px;
 	}
-	.grid__item:last-child {
+	.grid__item: last-child {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
 	}
@@ -586,7 +586,7 @@ footer { /* THIS CENTERS THE FOOTER! */
 	.grid {
 		grid-gap: 10px;
 	}
-	.grid__item:last-child {
+	.grid__item: last-child {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
 	}
