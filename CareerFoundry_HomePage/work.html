@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<title>WORK.HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!--10/16/20-->
+    	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@400;0,700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.production-2.css">
+	</head>
+	<body>
+
+		<!--**********
+			* HEADER *
+			**********-->
+		<!-- Header including the logo and the main navigation -->
+		<!--To make the dimensions right, I had to remove the logo's flex item and
+			hard-code the header item's height. -->
+		<header class="page_header"> <!--64X64 PNG; header height 72-->
+			<img src="img/logo.png"
+				alt="Personal logo of Doctor Jonathan Levi" 
+				class="page-header__item" 
+				id="my-page-header-logo"><!-- .svg cuts icon size in half -->
+			
+			<nav class="main-navigation page-header__item">		
+				<ul role="menubar" 
+					class="navigation-list">
+					<li role="presentation">
+						<a href="index.html" role="menuitem" 
+							class="navigation-list__item navigation-list__item--active">
+							Home
+						</a>
+					</li >
+					<li role="presentation">
+						<a href="work.html" role="menuitem" 
+							class="navigation-list__item">Work</a>
+					</li>
+					<li role="presentation">
+						<a href="about.html" role="menuitem" 
+							class="navigation-list__item">About</a>
+					</li>
+					<li role="presentation">
+						<a href="contact-Jonathan-Levi.html" role="menuitem" 
+							class="navigation-list__item">Contact</a>
+					</li>
+				</ul>
+			</nav>			
+		</header>
+		<!--********
+			* MAIN *
+			********-->		
+		<section>
+			<div id="grid-div">
+				<h1>Work</h1>
+				<div class="grid">
+					<!-- Grid items will live here -->
+					<div class="grid__item">
+						<h2>1. Python Script animating Excel Spreadsheet</h2>
+						<p>
+							Using Python to fill the spreadsheet's cells dynamically,
+							I caused it to make an animated drawing of a Lissajous curve..
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+					<div class="grid__item">
+						<h2>2. Animated Python Graphic</h2>
+						<p>
+							Using Python's Turtle module and a classic geometric algorithm, 
+							I made the script outline an ellipse by drawing lines tangent to it.
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+					<div class="grid__item">
+						<h2>3. Piano Score Fragment with Modifications</h2>
+						<p>
+							Using the Lilypond music-writing markup language, I 
+							recreated the first 8 measures of Chopin's First Étude for
+							Piano followed by two original, simplified versions.
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+					<div class="grid__item">
+						<h2>4. AppleScript To Extract a Chart from a Spreadsheet</h2>
+						<p>
+							The script created a screenshot of a the chart from a spreadsheet
+							that I update daily then cropped it, leaving only the chart; 
+							added it to a repository of previous snapshots.
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+					<div class="grid__item">
+						<h2>5. Piano Score Fragment (2))</h2>
+						<p>
+							Using the Lilypond music-writing markup language, I 
+							recreated the first 8 measures of Chopin's First Étude for
+							Piano followed by two original, simplified versions.
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+					<div class="grid__item">
+						<h2>6. AppleScript To Extract a Chart (2)</h2>
+						<p>
+							The script created a screenshot of a the chart from a spreadsheet
+							that I update daily then cropped it, leaving only the chart; 
+							added it to a repository of previous snapshots.
+						</p>
+						<a href="#">See project on GitHub</a>
+					</div>
+				</div>
+			</div>
+			</section>
+
+		<!--**********
+			* footer *
+			**********-->
+		<!-- Footer with links to social media profiles -->
+		<div class="footer-div" >
+		<!-- "margin: auto;" in css file for these elements centers-->
+			<footer class="page-footer" id="about-footer">
+				<div class="profile__text">
+					Find me on
+				</div> <!-- putting "flex: 1 1 100px;" in CSS caused
+						too much height; reason=? -->
+				<div class="social-media">
+					<!-- Github logo --><!--WHY ARE THE PNG FILES NEEDED?-->
+					<img src="img/iconfinder_github-social-media_765246.png"
+						alt="github" height="30" width="30">
+					<img src="img/iconfinder_BW_Twitter_glyph-transparent.png"
+						alt="twitter" height="30" width="30">
+					<img src="img/iconfinder_linkedin-social-media_765228.png"
+						alt="linkedin" height="30" width="30">
+				</div>
+			</footer>
+		</div>
+		<!--***********
+			* Scripts *
+			***********-->
+		<script src="js/tota11y.min.js"></script>
+	</body>
+</html>

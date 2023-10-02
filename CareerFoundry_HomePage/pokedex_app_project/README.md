@@ -1,0 +1,1 @@
+# Generates a list of buttons, each with information about a Pokémon; when clicked, the button displays its data in a modal dialog. Page also has a navigation bar, fixed to the top while the buttons scroll underneath. Formatting utilizes Bootstrap.

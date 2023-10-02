@@ -1,0 +1,3 @@
+The key thing to remember, however, is that each commit message should be able to complete this sentence:
+
+    ”If applied, this commit will have ________.”

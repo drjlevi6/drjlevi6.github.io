@@ -1,0 +1,604 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/* (Following apply to all of the anchors) */
+/* 1.8, 20201024 */
+:root { /* Native CSS variables */
+}
+
+*{
+	box-sizing: border-box;
+	X-Content-Type-Options: nosniff;
+}
+
+a {
+  color: #00665b;
+}
+
+a:visited {
+	/* visited link */
+	color: #00665b;
+}
+
+a:hover {
+	/* No underlining when hovering over a link */
+	text-decoration: none;
+}
+
+a:focus {
+	/* No underlining when hovering over a link */
+	text-decoration: none;
+}
+
+a:active {
+	/* selected link */
+	color: #440044;
+}
+
+a #navigation-list__item-about{
+	width: 200px;
+}
+
+/* Styles for about.html, ex. 1.7 --------------*/
+#download-cv-button {
+	color: black;
+}
+
+#download-cv-button:hover {
+	/* background-color: rgb(192, 192, 255); too purple */
+	/*background-color: rgb(143, 146, 211);*/ /* aquamarine */
+	background-color: rgb(205, 225, 247);
+}
+
+/* SVG animation, about.html: */
+.sun {
+	-webkit-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-name: color-change;
+	        animation-name: color-change;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	/* Or just: animation: 4s color-change infinite alternate linear; */
+}
+
+.cloud-front {
+	-webkit-animation-duration: 5s;
+	        animation-duration: 5s; /* was 30s; */
+	-webkit-animation-name: cloud-move;
+	        animation-name: cloud-move;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	        animation-direction: alternate;
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+	/* Or short way: animation: 30s cloud-move infinite alternate linear; */
+}
+
+
+.cloud-back {
+	/*animation: 34s cloud-move-reverse infinite alternate linear; */
+	-webkit-animation: 10s cloud-move-reverse infinite alternate linear;
+	        animation: 10s cloud-move-reverse infinite alternate linear;
+	fill: #ff9000; /* jl; doesn't work */
+}
+
+/* Fill-color for back-cloud */
+.cloud-back #cloud-back-path {
+	fill-color: #ff9000;
+	fill: #ff9000;
+	fill-image: #ff9000;
+	color: #ff9000;
+}
+/* end fill-color (filled/outlined) */
+
+@-webkit-keyframes cloud-back {
+	0% {
+		fill: #edc655;
+	}
+	2% {
+		fill: #f76414;
+	}
+	5% {
+		fill: #0000ff;
+	}
+}
+
+@keyframes cloud-back {
+	0% {
+		fill: #edc655;
+	}
+	2% {
+		fill: #f76414;
+	}
+	5% {
+		fill: #0000ff;
+	}
+}
+
+@-webkit-keyframes color-change {
+	0% {
+		fill: #ffb51c;
+	}
+	50% {
+		fill: #FF440B;
+	}
+	100% {
+		fill: #ffb51c;
+	}
+}
+
+@keyframes color-change {
+	0% {
+		fill: #ffb51c;
+	}
+	50% {
+		fill: #FF440B;
+	}
+	100% {
+		fill: #ffb51c;
+	}
+}
+
+@-webkit-keyframes cloud-move {
+	from {
+		-webkit-transform: translate(0, 50px);
+		        transform: translate(0, 50px);
+	}
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px);
+	}
+}
+
+@keyframes cloud-move {
+	from {
+		-webkit-transform: translate(0, 50px);
+		        transform: translate(0, 50px);
+	}
+	to {
+		-webkit-transform: translate(200px, 50px);
+		        transform: translate(200px, 50px);
+	}
+}
+
+@-webkit-keyframes cloud-move-reverse {
+	from {
+		-webkit-transform: translate(446px, 48px);
+		        transform: translate(446px, 48px);
+	}
+	to {
+		-webkit-transform: translate(100px, 48px);
+		        transform: translate(100px, 48px);
+	}
+}
+
+@keyframes cloud-move-reverse {
+	from {
+		-webkit-transform: translate(446px, 48px);
+		        transform: translate(446px, 48px);
+	}
+	to {
+		-webkit-transform: translate(100px, 48px);
+		        transform: translate(100px, 48px);
+	}
+}
+/*-----------------End SVG animation-------------*/
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#about-main-div-id {
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	/*width: 600px;	without this the container expands to width of page */
+	overflow: auto;		/* without this, container's height is less than image's */
+	margin:	20px;
+	/* border: 2px solid darkgreen; */
+}
+/* END Styles for about.html, ex. 1.7 ----------*/
+
+/* Ex. 1.8/about.html: Remove bullets from list items; JL 20201023 (Thanks Ted!) */
+.about-main-div-class ul li {
+	list-style-type: none;
+}
+
+nav { /* does _not_ include logo */
+	display: inline;
+	/*border: 1px solid black;*/
+	height: 69px;
+}
+
+nav ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	-webkit-box-pack: right;
+	    -ms-flex-pack: right;
+	        justify-content: right;
+}
+
+.page_header {
+	width: 100%;
+	height: 72px;
+	padding-right: 20px;
+	border: 2px solid darkblue;
+}
+
+.page-header__item{	/* Affects both logo and nav area */
+	 -webkit-box-flex: 0;
+	     -ms-flex: 0 1 100px;
+	         flex: 0 1 100px;	/* 200px makes the logo much too wide */
+}
+
+.page-header__item:last-child {
+	/*flex-grow: 1; */ /* This was limiting the ability of the logo to resize */
+	text-align: right;
+}
+
+.main-navigation{
+	float: right;
+}
+
+#my-page-header-logo {
+	float: left;
+	display: inline-block;
+	/* width: 50px; unnecessary */
+	height: 68px;
+	/*border: 2px solid red;*/
+}
+
+#navigation-list__item-about {	/* Affects both logo and nav area */
+	 width: 200px;
+}
+
+.navigation-list {
+	width: 300px;
+	list-style-type: none;
+}
+
+.navigation-list li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+body {
+	background-color: lightgray;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+a {
+	color: #00675c;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#author-info {
+	padding: 10px;
+	display: block;
+}
+
+#hello-message {
+	display: inline;
+}
+
+.profile__portrait {
+	float: left;
+	width: 250px;
+	margin-right: 40px;
+	border-radius: 20%;
+}
+
+main {
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 10px; /* create distance from header*/
+	width: 700px; /* without this the container expands to width of page */
+	overflow: auto;		/* without this, container's height is less than image's */
+	/*border: 2px solid darkblue;*/
+	margin-bottom: 30px;
+}
+
+.grid {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 300px 30px 300px;
+	grid-template-columns: 300px 300px; /*1fr 1fr 1fr;*/
+	-ms-grid-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 30px;
+}
+
+.grid > *:nth-child(1) {
+ -ms-grid-row: 1;
+ -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+ -ms-grid-row: 1;
+ -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+ -ms-grid-row: 2;
+ -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(4) {
+ -ms-grid-row: 2;
+ -ms-grid-column: 3;
+}
+
+.grid__item {
+	padding: 10px;
+	background-color: lightgray;
+}
+
+#grid-div {
+	border: 2px solid darkblue;
+	margin: 20px;
+}
+
+#show-code-samples {
+	border: 2px solid darkblue;
+}
+
+/* about.html (about-changedTitle-2.html)--------------------------------------*/
+.about-main-div-class {
+	margin: 0 auto;
+	border: 2px solid darkblue;
+	text-align:center;
+}
+
+.about-me-h1 {
+	margin: auto;
+	*/border: 2px solid darkblue;*/
+}
+
+.about-me-text {
+	margin: auto;
+	border: 2px solid darkblue;
+}
+
+.about-me-list {
+	align-items: center;
+	margin: auto;
+	border: 2px solid darkblue;
+}
+
+.about-me-list-item {
+	text-align: center;
+	border: 2px solid darkblue;
+}
+
+.berlin-illustration {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	border: 2px solid darkblue;
+}
+
+.button {
+	border: none;
+	display: block;
+	font-family: inherit;
+	background-color: #407f75;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-color: #fff;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition: 0.2s opacity;
+	-o-transition: 0.2s opacity;
+	transition: 0.2s opacity; /* duration, opacity */
+}
+
+button {
+	border: none;
+	display: block;
+	font-family: inherit;
+	background-color: #407f75;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 3px;
+	border-color: #fff;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+	-webkit-transition: 0.2s opacity;
+	-o-transition: 0.2s opacity;
+	transition: 0.2s opacity; /* duration, opacity */
+}
+
+.button { /* jl */
+	width: 220px;
+	margin: 0px auto 20px auto;	/* this line is essential */
+	text-align: center;	/* this line is essential */
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+	/* lets the mouse appear as a hand when hovering over the button */
+	cursor: pointer;
+	background-color: #ff8080;
+	/* reduces the opacity of the button to 80% */
+	opacity: 0.8;
+}
+
+#about-footer {
+	margin-top: 20px;
+}
+/* end about.html (about-changedTitle-2.html)----------------------------------*/
+
+/* Footer stuff (move stuff here as its's detected)--------------------------*/
+footer { /* THIS CENTERS THE FOOTER! */
+	margin: auto;
+}
+
+.profile__text { /* need the following for the inner elements as well */
+	margin: auto;
+}
+
+.social-media {
+	margin: auto;
+	/*margin: 5px;*/
+}
+
+/* End footer stuff----------------------------------------------------------*/
+
+.page-footer {
+	width: 150px;
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	border: 2px solid darkblue;
+}
+
+.about-page-footer {
+	margin: 20px;
+	width: 150px;
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	text-align: center;
+	border: 2px solid darkblue;
+}
+
+#education-div{
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 500px; /* without this the container expands to width of page */
+	overflow: auto;		/* without this, container's height is less than image's */
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+	border: 2px solid darkred;
+}
+
+.footer-icons-div {
+	display: inline-block;
+}
+
+.contact-form-div{
+	margin: 0 auto;
+	clear: both;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 10px; /* create distance from header*/
+	width: 300px; /* without this the container expands to width of page */
+	overflow: auto;		/* else container height < image height */
+	border: 2px solid darkblue;
+	margin-bottom: 30px;
+	border: 2px solid darkblue;
+}
+
+/* 1.7-----------------------------------------------*/
+@media all and (min-width: 500px) and (max-width: 750px){
+	.grid {
+		-ms-grid-columns: 1fr 10px 1fr;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.grid {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+	.grid {
+		-ms-grid-columns: 1fr 10px 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media all and (max-width: 750px) {
+	.grid {
+		grid-gap: 10px;
+	}
+	.grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
+
+/* I ADDED THE FOLLOWING to allow for up to 3 columns but it's not in the text */
+@media all and (min-width: 750px) {
+	.grid {
+		-ms-grid-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}

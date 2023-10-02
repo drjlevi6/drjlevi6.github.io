@@ -1,0 +1,153 @@
+/* From folder styles-20210109-reviewed */
+* {
+    x-content-type-options: nosniff;
+    margin: auto;
+}
+
+/* FOLLOWING IS COPIED from demo modal project's style.css */
+html,
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(129, 225, 218);
+}
+
+/* Formatting for pokémon image */
+.modals-image {
+    border: solid 1px black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styles for Bootstrap pokémon buttons: */
+.btn {
+    background-color: white;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+#showPokemonModal {
+    align-self: center;
+    padding: 0; /* 10px; */
+    margin: auto;
+    height: 350px;
+    width: 500px;
+    left: 5px;
+    right: 5px;
+}
+
+.modal-dialog {
+    margin: auto;
+}
+
+.modal-content {
+    height: 350px;
+}
+
+.modal-body {
+    margin: auto; /*5px;*/
+    margin-left: 20%;
+}
+
+.modals-image {
+    margin: 5px 5px 5px 5px;
+}
+
+/* Styles for nav version 20210418 */
+
+body {
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    /* width: 100%; */
+    margin: auto;
+    border: solid black 1px;
+    padding: 0px 0px 0px 0px;
+    z-index: 888;
+}
+
+.row div {
+    /* Courtesy Ted Walther 20210421 */
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 5px 0px 5px;
+}
+
+#brand-and-search-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar-inner-container {
+    justify-content: center;
+    align-items: center;
+}
+
+#brand-and-search-bar {
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#navbar-brand-name {
+    padding: 0px 0px 0px 0px;
+}
+
+.navbar-brand {
+    border: solid black 2px;
+    margin-right: 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.navbar-form {
+    margin-top: 7px;
+}
+
+.navbar-toggler {
+    margin: auto;
+    margin-top: 5px;
+}
+#navbarNavDropdown {
+    /* Courtesy Ted Walther 20210421 */
+    flex-grow: unset;
+}
+
+.creator {
+    padding: 7px 15px 7px 15px;
+    border: solid black 2px;
+    margin-bottom: 0px;
+}
+
+#pokemon-item-list {
+    padding-top: 137px;
+}
+
+@media all and (min-width: 247px) {
+    #brand-and-search-bar {
+        flex-direction: row;
+    }
+    #pokemon-item-list {
+        padding-top: 100px;
+    }
+}
+
+@media all and (min-width: 422px) {
+    #brand-and-search-bar {
+        flex-direction: row;
+    }
+    #pokemon-item-list {
+        padding-top: 56px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "pokedex_app_project",
+    "version": "1.0.0",
+    "description": "Generates a list of buttons, each with data about a Pokémon and triggering a modal dialogue showing the data; also has a navigation bar. Formatting is done using Bootstrap.",
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {
+        "prettier": "2.2.1"
+    },
+    "scripts": {
+        "test": "(Enter test strings in the navbar's <form> element)"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/drjlevi6/pokedex_app_project.git"
+    },
+    "keywords": [
+        "Bootstrap",
+        "navbar"
+    ],
+    "author": "Jonathan Levi, MD",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/drjlevi6/pokedex_app_project/issues"
+    },
+    "homepage": "https://github.com/drjlevi6/pokedex_app_project#readme"
+}
